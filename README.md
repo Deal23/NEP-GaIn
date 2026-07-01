@@ -2,7 +2,7 @@
 
 If this repository is helpful for your research, please cite the following paper:
 
-**C. Hua and J. Liu, "Machine Learning Potential for Ga-In Alloy Melting," *Materials Genome Engineering Advances* (2026), e70091.**  
+**C. Hua and J. Liu. Machine Learning Potential for Ga-In Alloy Melting. *Materials Genome Engineering Advances* (2026), e70091.**  
 DOI: **10.1002/mgea.70091**
 
 This repository contains the first-principles training data, trained neuroevolution potential (NEP) models, and GPUMD inputs used to study melting and thermophysical properties of Ga, In, and Ga-In alloys.
