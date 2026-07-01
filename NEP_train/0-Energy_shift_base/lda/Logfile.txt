@@ -1,0 +1,22 @@
+------------------------------------------------------------
+UNIT CONVERSION CONSTANTS
+------------------------------------------------------------
+Energy:   1 Hartree      = 27.2113838566 eV
+Forces:   1 Hartree/Bohr = 51.4220631857 eV/angstrom
+Virial(eV) = Stress(GPa) * Volume(Å³) / 160.2176634
+
+------------------------------------------------------------
+SUMMARY STATISTICS
+------------------------------------------------------------
+Item                      Count
+------------------------- -----
+Log folders processed     2
+Successfully converted    2
+Failed conversions        0
+Warnings issued           0
+
+------------------------------------------------------------
+SUCCESSFUL CONVERSIONS (used files)
+------------------------------------------------------------
+Ga -> Used model.xyz (atoms) + input.inp (lattice) + cp2k.log
+In -> Used model.xyz (atoms) + input.inp (lattice) + cp2k.log

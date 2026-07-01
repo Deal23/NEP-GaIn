@@ -1,0 +1,27 @@
+potential nep.txt
+velocity 30
+time_step 1
+
+# Relax at npt
+ensemble npt_mttk temp 30 30 aniso 1e-4 1e-4
+dump_thermo 500
+compute_orientorder 120000 nnn 12 3 4 6 8 1 1 1
+dump_xyz -1 1 4000 dump.xyz potential
+run 12000
+
+# Heat_lan  reference：156.59+273.15=429.74
+ensemble heat_lan 450 100 420 0 1
+compute 0 100 10 temperature
+compute_orientorder 30000 nnn 12 3 4 6 8 1 1 1
+dump_xyz -1 1 10000 dump.xyz potential
+run 30000
+
+# Relax at npt
+ensemble nph_mttk aniso 1e-4 1e-4
+dump_thermo 500
+compute_orientorder 800000 nnn 12 3 4 6 8 1 1 1
+dump_xyz -1 1 50000 dump.xyz potential
+dump_restart 200000
+run 800000
+
+

@@ -1,0 +1,15 @@
+potential nep.txt
+velocity 1
+time_step 1
+
+# Relax at npt
+ensemble npt_mttk temp 1 1 aniso 1e-4 1e-4
+dump_thermo 100
+run 10000
+
+# Heating at npt
+ensemble npt_mttk temp 1 500 aniso 1e-4 1e-4
+dump_thermo 1000
+dump_exyz 10000
+dump_restart 100000
+run 5000000
