@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the following paper."
+title: NEP-GaIn
+authors:
+  - family-names: Hua
+    given-names: Chen
+  - family-names: Liu
+    given-names: J.
+preferred-citation:
+  type: article
+  title: "Machine Learning Potential for Ga-In Alloy Melting"
+  authors:
+    - family-names: Hua
+      given-names: Chen
+    - family-names: Liu
+      given-names: J.
+  doi: 10.1002/mgea.70091
+  journal: Materials Genome Engineering Advances
+  year: 2026
+  article-number: e70091
